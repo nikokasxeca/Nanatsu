@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+* {
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;   
+}
+/*banner de shingeki*/
+.container__del__texto__principal{
+    width: 100%;
+    height: 100px;
+    background-image: url(../voces/nanatsu.gif);
+    display: grid;
+    place-items: center;   
+}
+
+.texto__principal{
+    white-space: nowrap;
+    border-right: 3px solid rgb(239, 255, 20);
+    width: 34ch;
+    overflow: hidden;
+    font-size: 1.9rem;
+    color: white;
+    animation: texto 10s 50 steps(30), cursor .15s infinite;
+}
+
+@keyframes texto {0% {width: 0}}
+@keyframes cursor {30% {border-color: blueviolet;}}
+
+
+/*shingeki*/
+
+.container__cards{
+
+    margin: auto;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+
+}
+
+.card{
+    width: 340px;
+    margin: 10px;
+    transition: all 300ms;
+}
+
+.card:hover{
+    width: 350px;
+}
+
+.card .cover{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card .cover img{
+    width: 200px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+    transition: all 400ms;
+}
+
+.card:hover .cover img{
+    top: 0px;
+    filter: none;
+}
+
+.card .img__back{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background-size: cover;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+.card:nth-of-type(1) .img__back{
+    background-image: url(../voces/bg1.gif);
+}
+
+.card:nth-of-type(2) .img__back{
+    background-image: url(../voces/bg2.gif);
+}
+
+.card:nth-of-type(3) .img__back{
+    background-image: url(../voces/bg3.gif);
+}
+
+.card:hover .img__back{
+    bottom: -40px;
+}
+
+.card .description{
+    background: white;
+    margin-top: -10px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    transition: all 300ms;
+}
+
+.card:hover .description{
+    padding: 40px;
+}
+
+.card .description h2{
+    margin-top: 10px;
+    font-family: 'Merienda',cursive;
+}
+
+.card .description p{
+    margin-top: 04px;
+    font-family: 'Baloo 2', cursive;
+ 
+
+}
+
+
+.card .description audio{
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    background: #92000A;
+    border-radius: 8px;
+    transition: all 300ms;
+}
+
+.card .description audio:hover{
+    background: #5E2129;
+}
+
+/*fin de shingeki*/
+
+
+/*banner de Kimetsu*/
+.container__del__texto__principal__kimetsu{
+    width: 100%;
+    height: 100px;
+    background-image: url(../voces/nanatsu1.gif);
+    display: grid;
+    place-items: center;   
+}
+.texto__principal__kimetsu{
+    white-space: nowrap;
+    border-right: 3px solid rgb(239, 255, 20);
+    width: 33ch;
+    overflow: hidden;
+    font-size: 1.9rem;
+    color: white;
+    animation: texto 10s 50 steps(30), cursor .15s infinite;
+}
+
+@keyframes texto {0% {width: 0}}
+@keyframes cursor {30% {border-color: blueviolet;}}
+/* fin de banner de Kimetsu*/
+
+/*Inicio de seiyus de Kimetsu*/
+.container__cards__kimetsu{
+
+    margin: auto;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.card__kimetsu{
+    width: 340px;
+    margin: 10px;
+    transition: all 300ms;
+}
+
+.card__kimetsu:hover{
+    width: 350px;
+}
+
+.card__kimetsu .cover__kimetsu{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card__kimetsu .cover__kimetsu img{
+    width: 200px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+    transition: all 400ms;
+}
+
+.card__kimetsu:hover .cover__kimetsu img{
+    top: 0px;
+    filter: none;
+}
+
+.card__kimetsu .img__back__kimetsu{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background-size: cover__kimetsu;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+.card__kimetsu:nth-of-type(1) .img__back__kimetsu{
+    background-image: url(../voces/bg6.gif);
+}
+
+.card__kimetsu:nth-of-type(2) .img__back__kimetsu{
+    background-image: url(../voces/bg7.gif);
+}
+
+.card__kimetsu:nth-of-type(3) .img__back__kimetsu{
+    background-image: url(../voces/bg8.gif);
+}
+.card__kimetsu:nth-of-type(4) .img__back__kimetsu{
+    background-image: url(../voces/bg9.gif);
+}
+
+.card__kimetsu:hover .img__back__kimetsu{
+    bottom: -40px;
+}
+
+.card__kimetsu .description{
+    background: white;
+    margin-top: -10px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    transition: all 300ms;
+}
+
+.card__kimetsu:hover .description{
+    padding: 20px;
+}
+
+.card__kimetsu .description h2{
+    margin-top: 05px;
+    font-family: 'Merienda',cursive;
+}
+
+.card__kimetsu .description p{
+    margin-top: 04px;
+    font-family: 'Baloo 2', cursive;
+
+}
+
+
+.card__kimetsu .description audio{
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    background: #92000A;
+    border-radius: 8px;
+    transition: all 300ms;
+}
+
+.card__kimetsu .description audio:hover{
+    background: #5E2129;
+}
+
+
+/*banner de Tokyo Revengers*/
+
+.container__del__texto__principal__tokyo{
+    width: 100%;
+    height: 100px;
+    background-image: url(../voces/bg13.gif);
+    display: grid;
+    place-items: center;
+    background-color: skyblue;  
+       
+}
+.texto__principal__Tokyo{
+    white-space: nowrap;
+    border-right: 3px solid rgb(239, 255, 20);
+    width: 33ch;
+    overflow: hidden;
+    font-size: 1.8rem;
+    color: white;
+    animation: texto 10s 50 steps(30), cursor .15s infinite;
+    
+}
+
+@keyframes texto {0% {width: 0}}
+@keyframes cursor {30% {border-color: blueviolet;}}
+
+
+/*Seiyus de Tokyo Revengers*/
+
+.container__cards__Tokyo__Revengers{
+
+    margin: auto;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card__Tokyo{
+    width: 325px;
+    margin: 12px;
+    transition: all 300ms;
+}
+
+.card__Tokyo:hover{
+    width: 350px;
+}
+
+.card__Tokyo .cover__Tokyo{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card__Tokyo .cover__Tokyo img{
+    width: 200px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+    transition: all 400ms;
+}
+
+.card__Tokyo:hover .cover__Tokyo img{
+    top: 0px;
+    filter: none;
+}
+
+.card__Tokyo .img__back__tokyo{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background-size: cover;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+.card__Tokyo:nth-of-type(1) .img__back__tokyo{
+    background-image: url(../voces/bg10.gif);
+}
+
+.card__Tokyo:nth-of-type(2) .img__back__tokyo{
+    background-image: url(../voces/bg11.gif);
+}
+
+.card__Tokyo:nth-of-type(3) .img__back__tokyo{
+    background-image: url(../voces/bg12.gif);
+}
+
+.card__Tokyo:hover .img__back__tokyo{
+    bottom: -40px;
+}
+
+.card__Tokyo .description__Tokyo{
+    background: white;
+    margin-top: -15px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    transition: all 300ms;
+}
+
+.card__Tokyo:hover .description__Tokyo{
+    padding: 20px;
+}
+
+.card__Tokyo .description__Tokyo h2{
+    margin-top: 05px;
+    font-family: 'Merienda',cursive;
+}
+
+.card__Tokyo .description__Tokyo p{
+    margin-top: 04px;
+    font-family: 'Baloo 2', cursive;
+
+
+}
+
+
+.card__Tokyo .description__Tokyo audio{
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    background: #92000A;
+    border-radius: 8px;
+    transition: all 300ms;
+}
+
+.card__Tokyo .description__Tokyo audio:hover{
+    background: #5E2129;
+}

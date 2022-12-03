@@ -1,0 +1,297 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+.titulo{
+	width: 80%;
+	height: 130px;
+	margin: auto	;
+	flex-wrap: wrap;
+}
+.texto-titulosprin{
+	font-size: 50px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: -10px;
+	min-width: 250px;
+	color: white;
+}
+
+.padre{
+	display: flex;
+	width: 80%;
+	margin: auto;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+.hijo{
+	margin-top: 0px;
+	min-width: 250px;
+}
+
+
+
+.hijo p{
+	padding-bottom: 8%;
+	font-size: 20px;
+	color: white;
+}
+
+label{
+	color: blue;
+}
+
+.hijo img{
+	width: 80%;
+	border-radius: 20px;
+	transition: 0.5s;
+	box-shadow: 0px 15px 25px;
+	cursor: pointer;
+	animation: nani 1.5s linear infinite;
+}
+
+
+.padre2{
+	width: 75%;
+	margin: auto;
+	display: flex;	
+	justify-content: center;
+	background: rgba(238, 41, 41, 0.7);
+	border-radius: 20px;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+.hijo2{
+	margin: 10%  7%;
+	border-radius: 20px;
+	padding: 1%;
+	min-width: 250px;
+}
+
+.hijo2 p{
+	color: white;
+	padding-bottom: 0;
+}
+
+.modal__paragraph{
+	color: black;
+	font-family: 'Baloo 2', cursive;
+	font-size: 16px;
+	font-weight: 400;
+}
+.modal__close{
+	font-family: 'Acme', sans-serif;
+	font-size: 18px;
+}
+
+.hijo:hover img{
+	transform: scale(1.1);
+}
+
+.light-box{
+	position: fixed;
+	transition: transform 1s ease-in-out;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100vh;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: scale(0);
+}
+
+.light-box img{
+	width: 80vw;
+	max-height: 100vh;
+}
+
+.light-box:target{
+	transform: scale(1);
+}
+
+.close{
+	display: block;
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	background-color: #851919;
+	color: white;
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+}
+
+
+
+
+@Keyframes we{
+	from{
+		background-position: top;
+	}
+
+	to{
+		background-position: bottom;
+	}
+}
+
+
+/*@Keyframes nani{
+	0%{
+		transform: translateY(0px);
+	}
+
+	50%{
+		transform: translateY(10px);
+	}
+
+	100%{
+		transform: translateY(0px);
+	}
+}*/
+
+.palabra{
+	width: 80%;
+	margin: auto;
+	background: blue;
+	text-align: center;
+}
+
+.comentarios{
+	width: 80%;
+	height: 800px;
+	margin: auto;
+	display: flex;
+	background-color: purple;
+	justify-content: center;
+}
+
+.comenta{
+	width: 15%;
+	margin: 1%;
+	height: 200px;
+	background: white;
+}
+
+header{
+	display: flex;
+	height: 2%;
+	width: 100%;
+}
+
+header:hover .cta{
+	background-color: darkred;
+}
+
+.cta{
+	font-family: 'Acme', sans-serif;
+	font-size: 20px;
+	transition: 2s;
+	margin: auto;
+	background-color: orange;
+	border: 2px solid black;
+	color: black;
+	text-decoration: none;
+	padding: 1.2em 3em;
+	border-radius: 20px;
+}
+
+.modal{
+	position: fixed;
+	background-color: rgba(255, 255, 255, 0.7);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+
+	--opacity: 0;
+	--pointer: none;
+
+	opacity: var(--opacity);
+	pointer-events: var(--pointer);
+	transition: opacity .5s;
+}
+
+.modal:target{
+	--opacity: 1;
+	--pointer: unset;
+}
+
+.modal__container{
+	margin: auto;
+	background-color: white;
+	width: 90%;
+	max-width: 600px;
+	max-height: 90%;
+	overflow: hidden;
+	text-align: center;
+	padding: 2.5em 1.5em;
+	border-radius: 1em;
+}
+
+.modal:target .modal__container{
+	animation: show 1s;
+}
+
+@Keyframes show{
+	0%{
+		transform: translateY(-150vh);
+	}
+
+	100%{
+		transform: translateY(0);
+	}
+}
+
+.modal__picture{
+	width: 90%;
+	margin: 0 14%;
+	margin-bottom: 2em;
+}
+
+.modal__img{
+	width: 100%;
+	display: block;
+}
+
+.modal__title{
+	font-size: 2.5rem;
+	font-weight: 500;
+}
+
+.modal__title--bold{
+	font-weight: 700;
+}
+
+.modal__paragraph{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	line-height: 1.5;
+}
+
+.modal__close{
+	border: 1px solid;
+	padding: 1em 2em;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 700;
+	color: #333;
+	border-radius: .4em;
+}
+
+@media (max-width: 600px){
+	.modal__title{
+		font-size: 1.7rem;
+	}
+}

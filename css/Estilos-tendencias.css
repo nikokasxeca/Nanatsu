@@ -1,0 +1,300 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.tendencias{
+	width: 95%;
+	margin-top: 4%;
+	margin-bottom: 5%;
+	margin-left: 5%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.contenedor{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 450px;
+	justify-items: center;
+	align-items: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.shingeki-no-kyojin{
+	height: 300px;
+	width: 300px;
+	overflow: hidden;
+	margin: auto;
+	padding: 10px, 30px;
+	border-radius: 5%;
+	border: 1px solid #fff;
+	transition: all .4s ease-in-out;
+	box-shadow: 0px, 1px, 5px, 0px rgb(0,0.0,0.3);
+	text-align: center;
+	background: linear-gradient(-135deg, cornsilk, lightsalmon);
+}
+
+.shingeki-no-kyojin:hover{
+	height: 670px;
+	width: 300px;
+	border-radius: 5%;
+	box-shadow: 0px, 2px, 10px rgb(0,0.0,0.5);
+}
+
+.shingeki-no-kyojin:hover .agrandar{
+	opacity: 1;
+	transition: scale(1);
+}
+
+.shingeki-no-kyojin:hover .desplazar{
+	transition: translateY(0px);
+	opacity: 1;
+}
+
+
+.kimetsu-no-yaiba{
+	height: 300px;
+	width: 300px;
+	overflow: hidden;
+	margin: auto;
+	padding: 10px, 30px;
+	border-radius: 5%;
+	border: 1px solid #fff;
+	transition: all .4s ease-in-out;
+	box-shadow: 0px, 1px, 5px, 0px rgb(0,0.0,0.3);
+	text-align: center;
+	background: linear-gradient(-135deg, cornsilk, lightsalmon);
+}
+
+.kimetsu-no-yaiba:hover{
+	height: 670px;
+	width: 300px;
+	border-radius: 5%;
+	box-shadow: 0px, 2px, 10px rgb(0,0.0,0.5);
+}
+
+.kimetsu-no-yaiba:hover .agrandar{
+	opacity: 1;
+	transition: scale(1);
+}
+
+.kimetsu-no-yaiba:hover .desplazar{
+	transition: translateY(0px);
+	opacity: 1;
+}
+
+
+.tokyo-revengers{
+	height: 300px;
+	width: 300px;
+	overflow: hidden;
+	margin: auto;
+	padding: 10px, 30px;
+	border-radius: 5%;
+	border: 1px solid #fff;
+	transition: all .4s ease-in-out;
+	box-shadow: 0px, 1px, 5px, 0px rgb(0,0.0,0.3);
+	text-align: center;
+	background: linear-gradient(-135deg, cornsilk, lightsalmon);
+}
+
+.tokyo-revengers:hover{
+	height: 670px;
+	width: 300px;
+	border-radius: 5%;
+	box-shadow: 0px, 2px, 10px rgb(0,0.0,0.5);
+}
+
+.tokyo-revengers:hover .agrandar{
+	opacity: 1;
+	transition: scale(1);
+}
+
+.tokyo-revengers:hover .desplazar{
+	transition: translateY(0px);
+	opacity: 1;
+}
+
+
+.boku-no-hero-academia{
+	height: 300px;
+	width: 300px;
+	overflow: hidden;
+	margin: auto;
+	padding: 10px, 30px;
+	border-radius: 5%;
+	border: 1px solid #fff;
+	transition: all .4s ease-in-out;
+	box-shadow: 0px, 1px, 5px, 0px rgb(0,0.0,0.3);
+	text-align: center;
+	background: linear-gradient(-135deg, cornsilk, lightsalmon);
+}
+
+.boku-no-hero-academia:hover{
+	height: 670px;
+	width: 300px;
+	border-radius: 5%;
+	box-shadow: 0px, 2px, 10px rgb(0,0.0,0.5);
+}
+
+.boku-no-hero-academia:hover .agrandar{
+	opacity: 1;
+	transition: scale(1);
+}
+
+.boku-no-hero-academia:hover .desplazar{
+	transition: translateY(0px);
+	opacity: 1;
+}
+
+
+.imagen img{
+	position: relative;
+	display: block;
+	height: 250px;
+	width: 250px;s
+	object-fit: cover;
+	margin: 20px auto;
+	transition: all 0.3s ease;
+}
+.imagen img:hover{
+	transform: scale(1.1);
+}
+
+.desplazar{
+	opacity: 0;
+	transition: all 0.5s ease;
+	transform: translateY(-45px);
+}
+
+.agrandar{
+	transformar: scale(0);
+	opacity: 0;
+	transition: all .4s ease;
+}
+
+
+.textos{
+	padding: 20px;
+}
+h1{
+	margin-top: 40px;
+	font-family: 'Acme', sans-serif;
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 5px;
+}
+
+h2{
+	font-family: 'Merienda',cursive;
+	text-align: center;
+	font-size: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+h3{
+	font-family: 'Baloo 2', cursive;
+	font-size: 15px;
+	line-height: 18px;
+}
+
+.info-text1{
+	text-align: center;
+	padding-bottom: 6px;
+}
+.info-text{
+	text-align: justify;
+	padding-bottom: 5px;
+}
+
+/*AQUI EMPIEZA EL BOTON*/
+.boton{
+	margin-top:-50px ;
+}
+
+.btn.secondary-btn.sm{
+	font-family: 'Acme', sans-serif;
+	font-size: 18px;
+	display: flex;
+	margin-top: -35px;
+	padding-left: 65px;
+}
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+}
+button.learn-more {
+	font-family: 'Acme', sans-serif;
+	font-size: 18px;
+	padding-bottom: 10px;
+  width: 12rem;
+  height: auto;
+}
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: darkred;		/*COLOR DE LETRA CON EFECTO*/
+  border-radius: 1.625rem;
+}
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: white;
+}
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: black;			/*COLOR DE LETRA SIN EFECTO*/
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+button:hover .circle {
+  width: 100%;
+}
+
